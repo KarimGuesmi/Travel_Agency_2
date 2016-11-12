@@ -44,7 +44,7 @@ public class Tester {
 		hu.elte.txtuml.api.stdlib.timers.Timer.start(oneOftheCustomers2, new DoReservation(), 2000);
 	
 		Action.log("Second customer is starting to Booking in Hotel");
-		
+		/*
 		Customer oneOftheCustomers3 = h.assoc(HotelBooking.customer.class).selectAny();
 		Action.send(new DoReservation(), oneOftheCustomers3);
 		hu.elte.txtuml.api.stdlib.timers.Timer.start(oneOftheCustomers3, new DoReservation(), 2000);
@@ -53,6 +53,7 @@ public class Tester {
 		Customer oneOftheCustomers4 = h.assoc(HotelBooking.customer.class).selectAny();
 		Action.send(new DoReservation(), oneOftheCustomers4);
 		hu.elte.txtuml.api.stdlib.timers.Timer.start(oneOftheCustomers4, new DoReservation(), 2000);
+		*/
 	}
 	
 	

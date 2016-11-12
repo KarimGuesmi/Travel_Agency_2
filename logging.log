@@ -929,3 +929,196 @@
 2016-10-31 00:23:07 EXEC TRACE - Customer@obj1 uses transition:EnterToHotel
 2016-10-31 00:23:08 EXEC TRACE - Customer@obj1 enters state:Stay
 2016-10-31 00:23:09 EXEC TRACE - Model executor terminated.
+2016-11-06 04:28:45 SYS   INFO - txtUML Diagnostics connection is set on 58563 for service instance 0x8a8d1f10
+2016-11-06 04:28:45 EXEC TRACE - Model executor started.
+2016-11-06 04:28:45 USER  INFO - Hotel and Customers are starting.
+2016-11-06 04:28:45 EXEC TRACE - Hotel@obj0 leaves initial:Init
+2016-11-06 04:28:46 EXEC TRACE - Hotel@obj0 uses transition:Initialize
+2016-11-06 04:28:47 EXEC TRACE - Hotel@obj0 enters state:Receive_Customer
+2016-11-06 04:28:48 EXEC TRACE - Customer@obj1 leaves initial:Init
+2016-11-06 04:28:49 EXEC TRACE - Customer@obj1 uses transition:Wait
+2016-11-06 04:28:51 EXEC TRACE - Customer@obj1 enters state:Waiting
+2016-11-06 04:28:52 EXEC TRACE - Customer@obj2 leaves initial:Init
+2016-11-06 04:28:52 EXEC TRACE - Customer@obj2 uses transition:Wait
+2016-11-06 04:28:52 EXEC TRACE - Customer@obj2 enters state:Waiting
+2016-11-06 04:28:52 EXEC TRACE - Customer@obj3 leaves initial:Init
+2016-11-06 04:28:52 EXEC TRACE - Customer@obj3 uses transition:Wait
+2016-11-06 04:28:52 EXEC TRACE - Customer@obj3 enters state:Waiting
+2016-11-06 04:28:52 EXEC TRACE - Customer@obj4 leaves initial:Init
+2016-11-06 04:28:52 EXEC TRACE - Customer@obj4 uses transition:Wait
+2016-11-06 04:28:52 EXEC TRACE - Customer@obj4 enters state:Waiting
+2016-11-06 04:28:52 USER  INFO - One of the customers is starting to Booking in Hotel
+2016-11-06 04:28:52 USER  INFO - Second customer is starting to Booking in Hotel
+2016-11-06 04:28:52 USER  INFO - Second customer is starting to Booking in Hotel
+2016-11-06 04:28:52 USER  INFO - Second customer is starting to Booking in Hotel
+2016-11-06 04:28:52 EXEC TRACE - Customer@obj1 processes signal:DoReservation
+2016-11-06 04:28:52 EXEC TRACE - Customer@obj1 leaves state:Waiting
+2016-11-06 04:28:53 EXEC TRACE - Customer@obj1 uses transition:Reservatio
+2016-11-06 04:28:54 EXEC TRACE - Customer@obj1 enters state:DoReserv
+2016-11-06 04:28:55 EXEC TRACE - Customer@obj1 processes signal:DoReservation
+2016-11-06 04:28:55 EXEC TRACE - Customer@obj1 leaves state:DoReserv
+2016-11-06 04:28:57 EXEC TRACE - Customer@obj1 uses transition:Check
+2016-11-06 04:28:58 EXEC TRACE - Customer@obj1 enters choice:Check_Place
+2016-11-06 04:28:59 EXEC TRACE - Customer@obj1 leaves choice:Check_Place
+2016-11-06 04:29:01 EXEC TRACE - Customer@obj1 uses transition:Book
+2016-11-06 04:29:02 EXEC TRACE - Customer@obj1 enters state:Check_In
+2016-11-06 04:29:03 EXEC TRACE - Customer@obj1 processes signal:DoReservation
+2016-11-06 04:29:03 EXEC TRACE - Customer@obj1 leaves state:Check_In
+2016-11-06 04:29:04 EXEC TRACE - Customer@obj1 uses transition:Pay
+2016-11-06 04:29:05 EXEC TRACE - Customer@obj1 enters state:Payment
+2016-11-06 04:29:07 EXEC TRACE - Customer@obj1 processes signal:DoReservation
+2016-11-06 04:29:07 EXEC TRACE - Customer@obj1 leaves state:Payment
+2016-11-06 04:29:08 EXEC TRACE - Customer@obj1 uses transition:EnterToHotel
+2016-11-06 04:29:09 EXEC TRACE - Customer@obj1 enters state:Stay
+2016-11-06 04:29:10 EXEC TRACE - Customer@obj1 processes signal:DoReservation
+2016-11-06 04:29:10 EXEC TRACE - Customer@obj1 leaves state:Stay
+2016-11-06 04:29:11 EXEC TRACE - Customer@obj1 uses transition:Verify_Date
+2016-11-06 04:29:12 EXEC TRACE - Customer@obj1 enters choice:Check_Date
+2016-11-06 04:29:14 EXEC TRACE - Customer@obj1 leaves choice:Check_Date
+2016-11-06 04:29:15 EXEC TRACE - Customer@obj1 uses transition:Back_Stay
+2016-11-06 04:29:16 EXEC TRACE - Customer@obj1 enters state:Stay
+2016-11-06 04:29:17 EXEC TRACE - Customer@obj1 processes signal:DoReservation
+2016-11-06 04:29:17 EXEC TRACE - Customer@obj1 leaves state:Stay
+2016-11-06 04:29:18 EXEC TRACE - Customer@obj1 uses transition:Verify_Date
+2016-11-06 04:29:19 EXEC TRACE - Customer@obj1 enters choice:Check_Date
+2016-11-06 04:29:21 EXEC TRACE - Customer@obj1 leaves choice:Check_Date
+2016-11-06 04:29:22 EXEC TRACE - Customer@obj1 uses transition:Back_Stay
+2016-11-06 04:29:23 EXEC TRACE - Customer@obj1 enters state:Stay
+2016-11-06 04:29:24 EXEC TRACE - Customer@obj1 processes signal:DoReservation
+2016-11-06 04:29:24 EXEC TRACE - Customer@obj1 leaves state:Stay
+2016-11-06 04:29:25 EXEC TRACE - Customer@obj1 uses transition:Verify_Date
+2016-11-06 04:29:26 EXEC TRACE - Customer@obj1 enters choice:Check_Date
+2016-11-06 04:29:27 EXEC TRACE - Customer@obj1 leaves choice:Check_Date
+2016-11-06 04:29:29 EXEC TRACE - Customer@obj1 uses transition:Back_Stay
+2016-11-06 04:29:30 EXEC TRACE - Customer@obj1 enters state:Stay
+2016-11-06 04:29:31 EXEC TRACE - Customer@obj1 processes signal:DoReservation
+2016-11-06 04:29:31 EXEC TRACE - Customer@obj1 leaves state:Stay
+2016-11-06 04:29:32 EXEC TRACE - Customer@obj1 uses transition:Verify_Date
+2016-11-06 04:29:33 EXEC TRACE - Customer@obj1 enters choice:Check_Date
+2016-11-06 04:29:34 EXEC TRACE - Customer@obj1 leaves choice:Check_Date
+2016-11-06 04:29:35 EXEC TRACE - Customer@obj1 uses transition:Back_Stay
+2016-11-06 04:29:37 EXEC TRACE - Customer@obj1 enters state:Stay
+2016-11-06 04:29:38 EXEC TRACE - Model executor terminated.
+2016-11-06 04:30:56 SYS   INFO - txtUML Diagnostics connection is set on 58667 for service instance 0x36e4ecef
+2016-11-06 04:30:56 EXEC TRACE - Model executor started.
+2016-11-06 04:30:56 USER  INFO - Hotel and Customers are starting.
+2016-11-06 04:30:57 EXEC TRACE - Hotel@obj0 leaves initial:Init
+2016-11-06 04:30:58 EXEC TRACE - Hotel@obj0 uses transition:Initialize
+2016-11-06 04:30:59 EXEC TRACE - Hotel@obj0 enters state:Receive_Customer
+2016-11-06 04:31:00 EXEC TRACE - Customer@obj1 leaves initial:Init
+2016-11-06 04:31:01 EXEC TRACE - Customer@obj1 uses transition:Wait
+2016-11-06 04:31:02 EXEC TRACE - Customer@obj1 enters state:Waiting
+2016-11-06 04:31:03 EXEC TRACE - Customer@obj2 leaves initial:Init
+2016-11-06 04:31:03 EXEC TRACE - Customer@obj2 uses transition:Wait
+2016-11-06 04:31:03 EXEC TRACE - Customer@obj2 enters state:Waiting
+2016-11-06 04:31:04 EXEC TRACE - Customer@obj3 leaves initial:Init
+2016-11-06 04:31:04 EXEC TRACE - Customer@obj3 uses transition:Wait
+2016-11-06 04:31:04 EXEC TRACE - Customer@obj3 enters state:Waiting
+2016-11-06 04:31:04 EXEC TRACE - Customer@obj4 leaves initial:Init
+2016-11-06 04:31:04 EXEC TRACE - Customer@obj4 uses transition:Wait
+2016-11-06 04:31:04 EXEC TRACE - Customer@obj4 enters state:Waiting
+2016-11-06 04:31:04 USER  INFO - One of the customers is starting to Booking in Hotel
+2016-11-06 04:31:04 USER  INFO - Second customer is starting to Booking in Hotel
+2016-11-06 04:31:04 USER  INFO - Second customer is starting to Booking in Hotel
+2016-11-06 04:31:04 EXEC TRACE - Customer@obj1 processes signal:DoReservation
+2016-11-06 04:31:04 EXEC TRACE - Customer@obj1 leaves state:Waiting
+2016-11-06 04:31:05 EXEC TRACE - Customer@obj1 uses transition:Reservatio
+2016-11-06 04:31:06 EXEC TRACE - Customer@obj1 enters state:DoReserv
+2016-11-06 04:31:07 EXEC TRACE - Customer@obj1 processes signal:DoReservation
+2016-11-06 04:31:07 EXEC TRACE - Customer@obj1 leaves state:DoReserv
+2016-11-06 04:31:09 EXEC TRACE - Customer@obj1 uses transition:Check
+2016-11-06 04:31:10 EXEC TRACE - Customer@obj1 enters choice:Check_Place
+2016-11-06 04:31:11 EXEC TRACE - Customer@obj1 leaves choice:Check_Place
+2016-11-06 04:31:12 EXEC TRACE - Customer@obj1 uses transition:Book
+2016-11-06 04:31:13 EXEC TRACE - Customer@obj1 enters state:Check_In
+2016-11-06 04:31:14 EXEC TRACE - Customer@obj1 processes signal:DoReservation
+2016-11-06 04:31:14 EXEC TRACE - Customer@obj1 leaves state:Check_In
+2016-11-06 04:31:16 EXEC TRACE - Customer@obj1 uses transition:Pay
+2016-11-06 04:31:17 EXEC TRACE - Customer@obj1 enters state:Payment
+2016-11-06 04:31:18 EXEC TRACE - Customer@obj1 processes signal:DoReservation
+2016-11-06 04:31:18 EXEC TRACE - Customer@obj1 leaves state:Payment
+2016-11-06 04:31:19 EXEC TRACE - Customer@obj1 uses transition:EnterToHotel
+2016-11-06 04:31:20 EXEC TRACE - Customer@obj1 enters state:Stay
+2016-11-06 04:31:21 EXEC TRACE - Model executor terminated.
+2016-11-06 21:48:59 SYS   INFO - txtUML Diagnostics connection is set on 61566 for service instance 0xfb96278b
+2016-11-06 21:48:59 EXEC TRACE - Model executor started.
+2016-11-06 21:48:59 USER  INFO - Hotel and Customers are starting.
+2016-11-06 21:48:59 EXEC TRACE - Hotel@obj0 leaves initial:Init
+2016-11-06 21:49:00 EXEC TRACE - Hotel@obj0 uses transition:Initialize
+2016-11-06 21:49:02 EXEC TRACE - Hotel@obj0 enters state:Receive_Customer
+2016-11-06 21:49:03 EXEC TRACE - Customer@obj1 leaves initial:Init
+2016-11-06 21:49:04 EXEC TRACE - Customer@obj1 uses transition:Wait
+2016-11-06 21:49:05 EXEC TRACE - Customer@obj1 enters state:Waiting
+2016-11-06 21:49:07 EXEC TRACE - Customer@obj2 leaves initial:Init
+2016-11-06 21:49:07 EXEC TRACE - Customer@obj2 uses transition:Wait
+2016-11-06 21:49:07 EXEC TRACE - Customer@obj2 enters state:Waiting
+2016-11-06 21:49:07 EXEC TRACE - Customer@obj3 leaves initial:Init
+2016-11-06 21:49:07 EXEC TRACE - Customer@obj3 uses transition:Wait
+2016-11-06 21:49:07 EXEC TRACE - Customer@obj3 enters state:Waiting
+2016-11-06 21:49:07 EXEC TRACE - Customer@obj4 leaves initial:Init
+2016-11-06 21:49:07 EXEC TRACE - Customer@obj4 uses transition:Wait
+2016-11-06 21:49:07 EXEC TRACE - Customer@obj4 enters state:Waiting
+2016-11-06 21:49:07 USER  INFO - One of the customers is starting to Booking in Hotel
+2016-11-06 21:49:07 USER  INFO - Second customer is starting to Booking in Hotel
+2016-11-06 21:49:07 USER  INFO - Second customer is starting to Booking in Hotel
+2016-11-06 21:49:07 EXEC TRACE - Customer@obj1 processes signal:DoReservation
+2016-11-06 21:49:07 EXEC TRACE - Customer@obj1 leaves state:Waiting
+2016-11-06 21:49:08 EXEC TRACE - Customer@obj1 uses transition:Reservatio
+2016-11-06 21:49:09 EXEC TRACE - Customer@obj1 enters state:DoReserv
+2016-11-06 21:49:10 EXEC TRACE - Customer@obj1 processes signal:DoReservation
+2016-11-06 21:49:10 EXEC TRACE - Customer@obj1 leaves state:DoReserv
+2016-11-06 21:49:11 EXEC TRACE - Customer@obj1 uses transition:Check
+2016-11-06 21:49:13 EXEC TRACE - Customer@obj1 enters choice:Check_Place
+2016-11-06 21:49:14 EXEC TRACE - Customer@obj1 leaves choice:Check_Place
+2016-11-06 21:49:15 EXEC TRACE - Customer@obj1 uses transition:Book
+2016-11-06 21:49:16 EXEC TRACE - Customer@obj1 enters state:Check_In
+2016-11-06 21:49:17 EXEC TRACE - Customer@obj1 processes signal:DoReservation
+2016-11-06 21:49:17 EXEC TRACE - Customer@obj1 leaves state:Check_In
+2016-11-06 21:49:18 EXEC TRACE - Customer@obj1 uses transition:Pay
+2016-11-06 21:49:19 EXEC TRACE - Customer@obj1 enters state:Payment
+2016-11-06 21:49:20 EXEC TRACE - Customer@obj1 processes signal:DoReservation
+2016-11-06 21:49:20 EXEC TRACE - Customer@obj1 leaves state:Payment
+2016-11-06 21:49:21 EXEC TRACE - Customer@obj1 uses transition:EnterToHotel
+2016-11-06 21:49:23 EXEC TRACE - Customer@obj1 enters state:Stay
+2016-11-06 21:49:24 EXEC TRACE - Model executor terminated.
+2016-11-06 21:50:24 SYS   INFO - txtUML Diagnostics connection is set on 61604 for service instance 0xd5377a5d
+2016-11-06 21:50:24 EXEC TRACE - Model executor started.
+2016-11-06 21:50:24 USER  INFO - Hotel and Customers are starting.
+2016-11-06 21:50:24 EXEC TRACE - Hotel@obj0 leaves initial:Init
+2016-11-06 21:50:25 EXEC TRACE - Hotel@obj0 uses transition:Initialize
+2016-11-06 21:50:26 EXEC TRACE - Hotel@obj0 enters state:Receive_Customer
+2016-11-06 21:50:27 EXEC TRACE - Customer@obj1 leaves initial:Init
+2016-11-06 21:50:28 EXEC TRACE - Customer@obj1 uses transition:Wait
+2016-11-06 21:50:29 EXEC TRACE - Customer@obj1 enters state:Waiting
+2016-11-06 21:50:30 EXEC TRACE - Customer@obj2 leaves initial:Init
+2016-11-06 21:50:30 EXEC TRACE - Customer@obj2 uses transition:Wait
+2016-11-06 21:50:30 EXEC TRACE - Customer@obj2 enters state:Waiting
+2016-11-06 21:50:30 EXEC TRACE - Customer@obj3 leaves initial:Init
+2016-11-06 21:50:30 EXEC TRACE - Customer@obj3 uses transition:Wait
+2016-11-06 21:50:30 EXEC TRACE - Customer@obj3 enters state:Waiting
+2016-11-06 21:50:30 EXEC TRACE - Customer@obj4 leaves initial:Init
+2016-11-06 21:50:30 EXEC TRACE - Customer@obj4 uses transition:Wait
+2016-11-06 21:50:30 EXEC TRACE - Customer@obj4 enters state:Waiting
+2016-11-06 21:50:30 USER  INFO - One of the customers is starting to Booking in Hotel
+2016-11-06 21:50:30 USER  INFO - Second customer is starting to Booking in Hotel
+2016-11-06 21:50:30 USER  INFO - Second customer is starting to Booking in Hotel
+2016-11-06 21:50:30 EXEC TRACE - Customer@obj1 processes signal:DoReservation
+2016-11-06 21:50:30 EXEC TRACE - Customer@obj1 leaves state:Waiting
+2016-11-06 21:50:31 EXEC TRACE - Customer@obj1 uses transition:Reservatio
+2016-11-06 21:50:33 EXEC TRACE - Customer@obj1 enters state:DoReserv
+2016-11-06 21:50:34 EXEC TRACE - Customer@obj1 processes signal:DoReservation
+2016-11-06 21:50:34 EXEC TRACE - Customer@obj1 leaves state:DoReserv
+2016-11-06 21:50:35 EXEC TRACE - Customer@obj1 uses transition:Check
+2016-11-06 21:50:36 EXEC TRACE - Customer@obj1 enters choice:Check_Place
+2016-11-06 21:50:37 EXEC TRACE - Customer@obj1 leaves choice:Check_Place
+2016-11-06 21:50:38 EXEC TRACE - Customer@obj1 uses transition:Book
+2016-11-06 21:50:39 EXEC TRACE - Customer@obj1 enters state:Check_In
+2016-11-06 21:50:41 EXEC TRACE - Customer@obj1 processes signal:DoReservation
+2016-11-06 21:50:41 EXEC TRACE - Customer@obj1 leaves state:Check_In
+2016-11-06 21:50:42 EXEC TRACE - Customer@obj1 uses transition:Pay
+2016-11-06 21:50:43 EXEC TRACE - Customer@obj1 enters state:Payment
+2016-11-06 21:50:44 EXEC TRACE - Customer@obj1 processes signal:DoReservation
+2016-11-06 21:50:45 EXEC TRACE - Customer@obj1 leaves state:Payment
+2016-11-06 21:50:46 EXEC TRACE - Customer@obj1 uses transition:EnterToHotel
+2016-11-06 21:50:47 EXEC TRACE - Customer@obj1 enters state:Stay
+2016-11-06 21:50:48 EXEC TRACE - Model executor terminated.
