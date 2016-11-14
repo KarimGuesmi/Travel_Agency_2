@@ -1,0 +1,9 @@
+100344
+Hotel_1
+hotel_cat_1
+hotel_adr_1
+hotel_phn_1
+hotel_mail_1
+hotel_desc_1
+hotel_img_1
+hotel_type_1

@@ -1,5 +1,7 @@
 package external;
 
+import java.io.FileNotFoundException;
+
 public interface ScannerInterface {
 	public void readID(HotelObject hotel);
 	public void readName(HotelObject hotel);
@@ -9,4 +11,6 @@ public interface ScannerInterface {
 	public void readDescription(HotelObject hotel);
 	public void readHotelType(HotelObject hotel);
 	public void display(HotelObject hotel);
+	
+	public void readFromFile(HotelObject hotel) throws FileNotFoundException ;
 }

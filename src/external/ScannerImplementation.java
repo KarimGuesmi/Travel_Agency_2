@@ -1,5 +1,7 @@
 package external;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class ScannerImplementation implements ScannerInterface{
@@ -83,5 +85,51 @@ public class ScannerImplementation implements ScannerInterface{
 		System.out.println("Your entered id is :"+hotel.getHotel_type());
 	}
 
+	@Override
+	public void readFromFile(HotelObject hotel) throws FileNotFoundException {
+		File file = new File("hotelData.txt");
+		try
+			{	
+				Scanner sc = new Scanner(file);
+				
+				int hotel_id = Integer.parseInt(sc.nextLine()) ;
+				hotel.setHotel_id(hotel_id);
+				
+				String hotel_name = sc.nextLine();
+				hotel.setHotel_name(hotel_name);
 
+				String hotel_cat = sc.nextLine();
+				hotel.setHotel_category(hotel_cat);
+
+				String hotel_adr = sc.nextLine();
+				hotel.setHotel_adress(hotel_adr);
+				
+				String hotel_phone = sc.nextLine();
+				hotel.setHotel_phone(hotel_phone);
+				
+				String hotel_mail = sc.nextLine();
+				hotel.setHotel_email(hotel_mail);
+				
+				String hotel_desc = sc.nextLine();
+				hotel.setHotel_description(hotel_desc);
+
+				String hotel_type = sc.nextLine();
+				hotel.setHotel_type(hotel_type);
+				
+				System.out.println(hotel.getHotel_id());
+				System.out.println(hotel.getHotel_name());
+				System.out.println(hotel.getHotel_category());
+				System.out.println(hotel.getHotel_phone());
+				System.out.println(hotel.getHotel_email());
+				System.out.println(hotel.getHotel_description());
+				System.out.println(hotel.getHotel_type());
+
+
+
+
+				
+		} catch (Exception e) {
+		e.printStackTrace();
+		}
+	}
 }
