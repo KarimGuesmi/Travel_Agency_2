@@ -1,16 +1,21 @@
 package external;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 
-public interface ScannerInterface {
-	public void readID(HotelObject hotel);
-	public void readName(HotelObject hotel);
-	public void readCategory(HotelObject hotel);
-	public void readPhone(HotelObject hotel);
-	public void readEmail(HotelObject hotel);
-	public void readDescription(HotelObject hotel);
-	public void readHotelType(HotelObject hotel);
-	public void display(HotelObject hotel);
+import hu.elte.txtuml.api.model.external.ExternalClass;
+
+public interface ScannerInterface extends ExternalClass{
+	public void scanner(File source);
+	public boolean hasNext();
+	public boolean hasNext(String pattern);
+	public boolean hasNextInt(int radix);
+	public boolean hasNextLine();
+	public String next();
+	public int nextInt();
+	public int nextInt(int radix);
+	public String nextLine();
+	public String toString();
+	public void remove();
 	
-	public void readFromFile(HotelObject hotel) throws FileNotFoundException ;
 }

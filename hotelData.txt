@@ -7,3 +7,6 @@ hotel_mail_1
 hotel_desc_1
 hotel_img_1
 hotel_type_1
+2001
+133
+1558
