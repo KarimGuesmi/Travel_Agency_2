@@ -65,10 +65,16 @@ public class ScannerImpl implements ScannerInterface{
 
 	@Override
 	public boolean hasNextInt() {
-		while(sc.hasNextInt()){
-			sc.nextInt();
-		}
 		return sc.hasNextInt();
+	}
+
+	public void reset(){
+		sc.reset();
+	}
+
+	@Override
+	public String findInLine(String pattern) {
+		return sc.findInLine(pattern);
 	}
 
 	//java doc: short documentation about this class and methods

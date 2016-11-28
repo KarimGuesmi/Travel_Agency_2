@@ -18,5 +18,7 @@ public interface ScannerInterface extends ExternalClass{
 	public String nextLine();
 	public String toString();
 	public void remove();
+	public void reset();
+	public String findInLine(String pattern);
 	
 }

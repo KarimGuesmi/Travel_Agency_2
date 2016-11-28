@@ -17,5 +17,18 @@ public class Tester {
 		
 		System.out.println(sImp.nextInt());
 		
+		System.out.println(sImp.hasNextInt(100344));
+		
+		System.out.println(sImp.hasNext());
+		
+		sImp.reset();
+		System.out.println("**********************");
+		while(sImp.hasNext()){
+			System.out.println(sImp.next());
+		}
+		
+		System.out.println(sImp.findInLine("hotel_type_1"));
+		
+		
 	}
 }
