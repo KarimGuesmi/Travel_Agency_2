@@ -1,4 +1,4 @@
-package external;
+package hu.elte.txtuml.stdlib.util;
 
 public class HotelObject {
 	int hotel_id;

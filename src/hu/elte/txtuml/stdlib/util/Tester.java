@@ -1,4 +1,4 @@
-package external;
+package hu.elte.txtuml.stdlib.util;
 
 import java.io.File;
 import java.io.FileNotFoundException;
