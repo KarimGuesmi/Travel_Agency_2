@@ -9,10 +9,11 @@ public class ScannerImpl implements ScannerInterface{
 	Scanner sc;
 	
 	@Override
-	public void scanner(File source) {
+	public void scanner(File file) {
 		try {
-			sc = new Scanner(source);
+			sc = new Scanner(file);
 		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -61,5 +62,18 @@ public class ScannerImpl implements ScannerInterface{
 	public void remove() {
 		sc.remove();
 	}
+
+	@Override
+	public boolean hasNextInt() {
+		while(sc.hasNextInt()){
+			sc.nextInt();
+		}
+		return sc.hasNextInt();
+	}
+
+	//java doc: short documentation about this class and methods
+	//long documentation to be summerized into short
+	// package names : hu.elte.txtuml.stdlib<subpackage> => original jsvs package name
+	// for methods names : clashing with txtyml reserved words : extends the name according to the semantics
 	
 }

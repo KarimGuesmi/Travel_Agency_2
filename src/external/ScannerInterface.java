@@ -6,10 +6,11 @@ import java.io.FileNotFoundException;
 import hu.elte.txtuml.api.model.external.ExternalClass;
 
 public interface ScannerInterface extends ExternalClass{
-	public void scanner(File source);
+	public void scanner(File file);
 	public boolean hasNext();
 	public boolean hasNext(String pattern);
 	public boolean hasNextInt(int radix);
+	public boolean hasNextInt();
 	public boolean hasNextLine();
 	public String next();
 	public int nextInt();
