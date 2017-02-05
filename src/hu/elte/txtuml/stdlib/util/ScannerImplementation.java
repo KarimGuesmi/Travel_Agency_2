@@ -1,21 +1,13 @@
 package hu.elte.txtuml.stdlib.util;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Scanner;
 
-public class ScannerImpl implements ScannerInterface{
-	Scanner sc;
+public class ScannerImplementation implements Scanner{
+	java.util.Scanner sc;
 	
 	@Override
-	public void scanner(File file) {
-		try {
-			sc = new Scanner(file);
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	public void Scanner(String source) {
+			sc = new Scanner(source);
 	}
 
 	@Override
@@ -30,7 +22,7 @@ public class ScannerImpl implements ScannerInterface{
 
 	@Override
 	public boolean hasNextInt(int radix) {
-		return sc.hasNextInt();
+		return sc.hasNextInt(radix);
 	}
 
 	@Override
@@ -76,10 +68,4 @@ public class ScannerImpl implements ScannerInterface{
 	public String findInLine(String pattern) {
 		return sc.findInLine(pattern);
 	}
-
-	//java doc: short documentation about this class and methods
-	//long documentation to be summerized into short
-	// package names : hu.elte.txtuml.stdlib<subpackage> => original jsvs package name
-	// for methods names : clashing with txtyml reserved words : extends the name according to the semantics
-	
 }
